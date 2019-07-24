@@ -8,3 +8,6 @@
 ### day02作业
 
 <p><a href="https://qwerpanbaojiang.github.io/code/html/%E4%BD%9C%E4%B8%9A.html">作业</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/code/html/%E4%BD%9C%E4%B8%9A.html">作业</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/code/html/%E4%BD%9C%E4%B8%9A.html">作业</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/code/html/%E4%BD%9C%E4%B8%9A.html">作业</a></p>
