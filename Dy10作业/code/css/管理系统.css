@@ -1,0 +1,199 @@
+html,body{
+    height: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    /* background: blue; */
+}
+.box .box-top{
+    height: 87px;
+    width: 100%;
+    position: relative;
+    /* background: aqua; */
+}
+.box .box-bottom{
+    height: calc(100% - 87px);
+    /* background: brown; */
+}
+.box .bottom-left{
+    width: 197px;
+    height: 100%;
+    float: left;
+    background: #417ec8;
+}
+.box .bottom-right{
+    width: calc(100% - 197px);
+    height: 100%;
+    background: blue;
+    float: right;
+}
+
+
+
+/*--------------- box-top区域--------------- */
+.box .box-top{
+    background: #7ab5e9 url(../image/logo.png)no-repeat;
+    background-position: 30px 30px;
+}
+
+
+.box .box-top .top-ul{
+    position: absolute;
+    height: 48px;
+    top: 38px;
+    right: 44px;
+}
+
+
+.box .box-top .top-ul li{
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.box .box-top .top-ul li a{
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.box .box-top .top-ul li .top-yc{
+    width: 95px;
+    height: 56px;
+    /* text-align: center; */
+    background: url(../image/libj.png)no-repeat;
+    position: absolute;
+    top: -5px;
+    left: -18px;
+    display: none;
+}
+
+
+.box .box-top .top-ul li .img-yc{
+    margin-top: 5px;
+}
+.box .box-top .top-ul li .p-yc{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 1px;
+}
+
+.box .box-top .top-ul li:hover .top-yc{
+    display: block;
+}
+
+/*--------------- box-left区域--------------- */
+.box .box-bottom .bottom-left .left-ul{
+    width: 100%;
+    position: relative;
+}
+
+.box .box-bottom .bottom-left .left-ul li{
+
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 22px;  
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l1{
+    background: url(../image/left_04.jpg) no-repeat;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l2{
+    background: url(../image/left_04.jpg) no-repeat;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l3{
+    background: url(../image/left_04.jpg) no-repeat;
+}
+.box .box-bottom .bottom-left .left-ul li p{
+    padding-left:  44px;
+    color: #fff;
+    display: block;
+}
+
+.box .box-bottom .bottom-left .left-ul li .p2 {
+    padding-left: 44px;
+    color: #000;
+    display: block;
+}
+
+
+.box .box-bottom .bottom-left .left-ul .ul-l1 .p1{
+    background: url(../image/left_01.jpg)no-repeat;
+    background-position: 14px center;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l2 .p1{
+    background: url(../image/left_02.jpg)no-repeat;
+     background-position: 14px center;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l3 .p1{
+    background: url(../image/left_03.jpg)no-repeat;
+     background-position: 14px center;
+}
+
+
+.box .box-bottom .bottom-left .left-ycul{
+    width: 197px;
+    height: 200px;
+    /* background: #7ab5e9; */
+    display: none;
+}
+
+.box .box-bottom .bottom-left .ul-l1 .left-ycul .yc-l{
+    background:url(../image/left_01.png)no-repeat 14px center, url(../image/left_hover.jpg)no-repeat;
+    height: 36px;
+}
+
+.box .box-bottom .bottom-left .yc-l a{
+    font-size: 14px;
+    color: #333;
+    line-height: 36px;
+}
+
+/* .box .box-bottom .bottom-left .yc-li{
+    font-size: 14px;
+    color: #b9d7f1;
+
+} */
+
+.box .box-bottom .bottom-left .left-ul .ul-l1:hover .left-ycul{
+    display: block;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l1:hover .p1{
+    display: none;
+}
+
+.box .box-bottom .bottom-left .ul-l2 .left-ycul .yc-l{
+    background:url(../image/left_02.png)no-repeat 14px center, url(../image/left_hover.jpg)no-repeat;
+    height: 36px;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l2:hover .left-ycul{
+    display: block;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l2:hover .p1{
+    display: none;
+}
+
+.box .box-bottom .bottom-left .ul-l3 .left-ycul .yc-l{
+    background:url(../image/left_03.jpg)no-repeat 14px center, url(../image/left_hover.jpg)no-repeat;
+    height: 36px;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l3:hover .left-ycul{
+    display: block;
+}
+
+.box .box-bottom .bottom-left .left-ul .ul-l3:hover .p1{
+    display: none;
+}
