@@ -25,7 +25,7 @@ html,body{
 .box .bottom-right{
     width: calc(100% - 197px);
     height: 100%;
-    background: blue;
+    background:#fff;
     float: right;
 }
 
@@ -35,6 +35,7 @@ html,body{
 .box .box-top{
     background: #7ab5e9 url(../image/logo.png)no-repeat;
     background-position: 30px 30px;
+    /* border-bottom: 4px solid #427ec7; */
 }
 
 
@@ -196,4 +197,116 @@ html,body{
 
 .box .box-bottom .bottom-left .left-ul .ul-l3:hover .p1{
     display: none;
+}
+
+/*--------------- box-right区域--------------- */
+
+.box .bottom-right{
+ /* box-shadow:0 0 5px 2px #d4d2df; */
+ background: url(../image/sq.png)no-repeat;
+ background-position: 0 center;
+
+}
+
+.box .bottom-right .right-boder{
+    width: 8px;
+    height: 100%;
+    /* border-top: 4px solid #427ec7; */
+    background: #d4d2df;
+    box-shadow:0 0 5px 2px #bab8c6;
+    background:#d4d2df url(../image/sq.png)no-repeat;
+    background-position: 0 center;
+    display: block;
+    float: left;
+
+}
+
+.box .bottom-right .right-top{
+    height: 30px;
+    width: 100%;
+    border-top: 4px solid #427ec7;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+/* .box .bottom-right .right-top ul{
+    
+} */
+
+
+.box .bottom-right .right-top ul li{
+    text-align: center;
+    margin-left: 10px;
+    line-height: 30px;
+
+}
+
+.box .bottom-right .right-top ul a{
+    font-size: 12px;
+    line-height: 30px;
+    color: #636363;
+}
+
+
+.box .bottom-right .right-foot{
+    height: 462px;
+    background: #fff;
+    width: 100%;
+}
+
+.box .bottom-right .right-p{
+    height: 50px;
+    line-height: 50px;
+}
+.box .bottom-right .right-p a{
+    font-size: 12px;
+    color: #000;
+    margin-left: 20px;
+}
+
+.box .bottom-right .right-p label{
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.box .bottom-right .right-p input[type=search]{
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 24px;
+
+}
+.box .bottom-right .right-p select{
+    width: 120px;
+    height: 24px;
+    border: 1px solid #ccc;
+}
+
+.box .bottom-right .right-foot input[type=button]{
+    width: 56px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #f9f9f9
+
+}
+
+.box .bottom-right .right-foot table{
+    caption-side: bottom;
+    width: 99%;
+    height:375px; 
+    border-spacing: 0;
+    background: #fff;
+}
+
+.box .bottom-right .right-foot table caption{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.box .bottom-right .right-foot table tr:nth-child(2n+1){
+    background: #417ec8;
+}
+.box .bottom-right .right-foot table tr th{
+    color: #000;
+}
+.box .bottom-right .right-foot table tr td{
+    color: #000;
 }
