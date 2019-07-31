@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .box {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .box .tbox {
+            width: 600px;
+            height: 100px;
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 10px 5px 2px #c0c0c0;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        .box .box-left {
+            width: 400px;
+            height: 80px;
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: center;
+            /* line-height: 80px; */
+        }
+
+
+        .box .box-left input {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .box .box-right {
+            width: 170px;
+            height: 80px;
+            /* background: blue; */
+            border-radius: 10px;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .box .box-right input {
+            width: 100%;
+            height: 100%;
+            background: #2aabbe;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="tbox">
+            <div class="box-left">
+                <input type="search" placeholder="Search for Css3,HTML5,jQuery...">
+            </div>
+
+            <div class="box-right">
+                <input type="button" value="GO">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
