@@ -1,0 +1,241 @@
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    /* background: aqua; */
+    height: 100%;
+}
+
+.box clearfix::after{
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.box .centen{
+    width: 1200px;
+    margin: auto;
+    /* background: aliceblue; */
+}
+
+.box .box1{
+    height: 360px;
+    margin: auto;
+    background: url(../image/bg.png)no-repeat center 0;
+}
+
+/*------------------- box1 区域------------------- */
+
+.box1 .header{
+    font-size: 33px;
+    line-height: 33px;
+    color: #000010;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.box1 .box1-nav{
+    width:100%;
+    height: 230px;
+    background: #ffffff;
+    margin-top: 40px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0 10px 5px #f5f5f5;
+    display: flex;
+}
+
+.box1 .box1-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box1 .box1-ul li img{
+    width: 36px;
+    height: 36px;
+}
+.box1 .box1-ul li{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/*------------------- box2 区域------------------- */
+.box2 {
+    height: 404px;
+    margin-top: 70px;
+}
+
+.box2 .box2-header{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.box2 .box2-banner{
+    width: 100%;
+    height: 204px;
+    margin-top: 42px;
+}
+
+.box2 .box2-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    /* align-items: center; */
+    
+}
+.box2 .box2-ul li{
+    width: 208px;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 9px 9px 10px 0 #f9f7f8;
+
+}
+.box2 .box2-ul li span{
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/*------------------- box3 区域------------------- */
+
+.box3{
+    height: 580px;
+    box-shadow: 0 -44px 5px #f9f7f8;
+    position: relative;
+}
+
+.box3 .box3-h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+    margin-top: 4px;
+}
+.box3 .box3-p1{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.box3 .box3-p1 a{
+    color: #333;
+}
+
+.box3 .box3-banner{
+    height: 320px;
+    margin-top: 35px;
+}
+
+.box3 .box3-banner ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 .box3-banner ul li{
+    width: 264px;
+    height: 316px;
+   position: relative;
+}
+
+.box3 .box3-banner ul li img{
+    width: 264px;
+    height: 264px;
+}
+
+.box3 .box3-banner ul li .a1{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.box3 .box3-banner ul li .box3-dv{
+    width: 234px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0 8px 20px ;
+    box-sizing: border-box;
+    left: 15px;
+    box-shadow: -2px 4px 10px 0 #f9f7f8,2px -1px 5px 0 #f9f7f8;
+    /* flex-shrink: 0;
+    z-index: 100;
+    align-self: flex-end;
+    align-self: center; */
+}
+.box3 .box3-banner ul li .box3-dvh{
+    font-size: 22px;
+    color: #333;
+}
+
+.box3 .box3-banner ul li .box3-dv span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    /* border: 1px solid red; */
+    background: red;
+}
+
+.box3 .box3-banner ul li .box3-dv p a{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+.box3 .box3-banner ul li .box3-dv:hover{
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.box3 .box3-banner ul li .box3-dv p a:hover{
+    text-decoration: underline;
+}
+
+.box3 .box3-foot{
+    display: block;
+    width: 150px;
+    height: 44px;
+    text-align: center;
+    border-radius: 20px;
+    background: #f7314a;
+    position: absolute;
+    bottom: 40px;
+    left: 700px;
+}
+
+.box3 .box3-foot a{
+    font-size: 16px;
+    color: #fff;
+    line-height: 44px;
+    width:100%;
+    height: 100%;
+    display: block;
+
+}

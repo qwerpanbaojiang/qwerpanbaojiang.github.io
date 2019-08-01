@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            margin: auto;
+            border: 1px solid #ccc;
+            background: url(../image/feature.jpg)no-repeat;
+        }
+
+        .box div {
+            width: 300px;
+            height: 300px;
+            background: blue;
+            position: relative;
+        }
+
+        .box span {
+            display: block;
+            width: 0;
+            height: 0px;
+            border: 10px solid transparent;
+            border-right-color: #efeef4;
+            position: absolute;
+            right: -0px;
+            top: 40px;
+        }
+
+        .box div:nth-child(2n-1) {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-1">
+            <span></span>
+        </div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="bpx-4"></div>
+    </div>
+</body>
+
+</html>

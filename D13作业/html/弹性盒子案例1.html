@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .box .header,
+        .foot {
+            height: 100px;
+            background: darkorange;
+        }
+
+        .box .main {
+            flex: 1;
+            background: blue;
+            display: flex;
+        }
+
+        .box .nav,
+        .aside {
+            width: 100px;
+            background: aqua;
+        }
+
+        .box .mn {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <di class="header">header</di>
+        <di class="main">
+            <di class="nav">nav</di>
+            <di class="mn">main</di>
+            <di class="aside">aside</di>
+        </di>
+        <di class="foot">footer</di>
+    </div>
+</body>
+
+</html>

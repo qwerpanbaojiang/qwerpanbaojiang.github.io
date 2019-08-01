@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 800px;
+            height: 200px;
+            background: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .box li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background: #e7e7e7;
+            border-radius: 10px;
+            display: flex;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .box li:nth-child(1) {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box li:nth-child(n+2) {
+            justify-content: space-between;
+        }
+
+
+        .box li:nth-child(2) span:nth-child(2),
+        li:nth-child(3) span:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .box li:nth-child(3) span:nth-child(2),
+        li:nth-child(5) div:nth-child(2) {
+            align-self: center;
+        }
+
+
+        .box li span {
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+            background: #333;
+        }
+
+        .box li div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>
+            <span></span>
+        </li>
+        <li><span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
