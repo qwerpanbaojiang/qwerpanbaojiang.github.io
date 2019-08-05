@@ -18,3 +18,13 @@
 <p><a href="https://qwerpanbaojiang.github.io/D13作业/html/弹性盒子案例2.html">弹性盒子案例2</a></p>
 
 <p><a href="https://qwerpanbaojiang.github.io/D13作业/html/骰子案例.html">骰子案例</a></p>
+
+
+###   Day14周末作业
+
+
+<p><a href="https://qwerpanbaojiang.github.io/D14周末作业//html/D14周末开源.html">开源博客</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/D14周末作业//html/多列布局.html">多列布局</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/D14周末作业//html/移动端.html">移动端</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/D14周末作业//html/支付宝.html">支付宝</a></p>
+<p><a href="https://qwerpanbaojiang.github.io/D14周末作业//html/自定义字体.html">自定义字体练习</a></p>

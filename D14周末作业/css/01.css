@@ -1,0 +1,21 @@
+html,body{
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    column-count: 1;
+    flex-wrap: wrap;
+}
+
+.box li{
+    height: 500px;
+    width: 99%;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+.box li img{
+    height: 100%;
+    width: 100%;
+}
