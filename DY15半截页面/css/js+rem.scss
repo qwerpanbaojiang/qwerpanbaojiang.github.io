@@ -1,0 +1,234 @@
+html,
+body {
+    height: 100%;
+}
+
+#box {
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+
+    .pc-header {
+        height: 4.266667rem;
+        // background: aqua;
+        display: flex;
+        justify-content: center;
+        border-bottom: .013333rem solid#ccc;
+
+        .header-left {
+            flex: 1;
+            border-right: .013333rem solid #ccc;
+            background: url(../image/hongbao.webp)no-repeat 2.666667rem 1.6rem;
+            padding: .64rem .453333rem;
+            box-sizing: border-box;
+
+            h2 {
+                font-size: .4rem;
+                line-height: .4rem;
+                color: #ffa820;
+            }
+
+            span {
+                font-size: .293333rem;
+                line-height: .293333rem;
+                color: #b1b1b1;
+                margin-top: .266667rem;
+            }
+        }
+
+        .header-right {
+            flex: 1;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                li:nth-child(1) {
+                    flex: 1;
+                    padding: .586667rem .4rem;
+                    box-sizing: border-box;
+                    border-bottom: .013333rem solid #ccc;
+                    background: url(../image/hongbao1.webp)no-repeat 3.333333rem center;
+                    background-size: 1.12rem 1.066667rem;
+
+                    h2 {
+                        font-size: .4rem;
+                        line-height: .4rem;
+                        color: #00a3fe;
+                    }
+
+                    span {
+                        font-size: .293333rem;
+                        line-height: .293333rem;
+                        color: #ccc;
+                        margin-top: .266667rem;
+                    }
+                }
+
+                li:nth-child(2) {
+                    flex: 1;
+                    padding: .586667rem .4rem;
+                    box-sizing: border-box;
+                    border-bottom: .013333rem solid #ccc;
+                    background: url(../image/hongbao1.webp)no-repeat 3.333333rem center;
+                    background-size: 1.12rem 1.066667rem;
+
+                    h2 {
+                        font-size: .4rem;
+                        line-height: .4rem;
+                        color: #00a3fe;
+                    }
+
+                    span {
+                        font-size: .293333rem;
+                        line-height: .293333rem;
+                        color: #ccc;
+                        margin-top: .266667rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .pc-main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .main-top {
+            height: 1.786667rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                i {
+                    font-size: .453333rem;
+                    color: dodgerblue;
+                }
+
+                font-size: .453333rem;
+                color: #000;
+            }
+
+            span {
+                font-size: .266667rem;
+                line-height: .266667rem;
+                color: #999;
+                margin-top: .106667rem;
+            }
+        }
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                width: 45%;
+                height: 7.066667rem;
+                flex-direction: column;
+                border: .013333rem solid #ccc;
+                margin-top: .266667rem;
+                // justify-content: space-between;
+
+                // align-items: center;
+                img {
+                    width: 100%;
+                    height: 4.6rem;
+                }
+
+                h2 {
+                    font-size: .346667rem;
+                    color: #000;
+                    margin-left: .266667rem;
+                }
+
+                .i1 {
+                    font-size: .266667rem;
+                    color: #999;
+                    margin-left: .266667rem;
+                    margin-top: .08rem;
+                }
+
+                p {
+                    display: flex;
+                    font-size: .32rem;
+                    color: #ffa820;
+                    margin-left: .266667rem;
+                    margin-top: .08rem;
+
+                    i {
+                        display: block;
+                        width: 1.146667rem;
+                        height: .48rem;
+                        margin-top: .08rem;
+                        border: .013333rem solid#e98681;
+                        font-size: .266667rem;
+                        color: #e98681;
+                        text-align: center;
+                        line-height: .48rem;
+                        margin-left: .16rem;
+                    }
+                }
+
+                span {
+                    height: .853333rem;
+                    width: 80%;
+                    margin-left: .266667rem;
+                    display: block;
+                    border-top: .013333rem dashed #ced0cf;
+                    line-height: .853333rem;
+                    font-size: .28rem;
+                    color: #d8d8d8;
+                }
+            }
+        }
+    }
+
+    .pc-footer {
+        width: 100%;
+        height: 1.413333rem;
+        position: fixed;
+        background: #fff;
+        bottom: 0;
+        background: #fff;
+        box-shadow: -0.66667vw 0 0.66667vw 0.66667vw #efefef;
+
+        ul {
+            display: flex;
+            height: 100%;
+            justify-content: space-around;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                span {
+                    font-size: 2.4vw;
+                    color: #b1b1b1;
+                }
+
+                i {
+                    font-size: 4.66667vw;
+                    color: #b1b1b1;
+                }
+            }
+
+            li:hover i {
+                color: #00a3fe;
+            }
+
+            li:hover span {
+                color: #00a3fe;
+            }
+        }
+    }
+}
