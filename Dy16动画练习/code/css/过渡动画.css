@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.box {
+    width: 1010px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.box ul li {
+    width: 100px;
+    height: 100%;
+    float: left;
+    border-right: 1px dashed #ccc;
+    text-align: center;
+    transition: background-position 0.5s;
+
+}
+
+.box ul li span {
+
+    font-size: 12px;
+    line-height: 40px;
+    color: #909090;
+    margin-left: 20px;
+}
+
+.box ul li:nth-child(1) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -54px;
+}
+
+.box ul li:nth-child(1):hover {
+    background-position: 15px -92px;
+}
+
+.box ul li:nth-child(2) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -132px;
+}
+
+.box ul li:nth-child(2):hover {
+    background-position: 15px -172px;
+}
+
+.box ul li:nth-child(3) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -212px;
+}
+
+.box ul li:nth-child(3):hover {
+    background-position: 15px -254px;
+}
+
+.box ul li:nth-child(4) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -296px;
+}
+
+.box ul li:nth-child(4):hover {
+    background-position: 15px -336px;
+}
+.box ul li:nth-child(5) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -376px;
+}
+
+.box ul li:nth-child(5):hover {
+    background-position: 15px -416px;
+}
+
+.box ul li:nth-child(6) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -456px;
+}
+
+.box ul li:nth-child(6):hover {
+    background-position: 15px -496px;
+}
+.box ul li:nth-child(7) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -530px;
+}
+
+.box ul li:nth-child(7):hover {
+    background-position: 15px -566px;
+}
+
+.box ul li:nth-child(8) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -604px;
+}
+
+.box ul li:nth-child(8):hover {
+    background-position: 15px -644px;
+}
+
+.box ul li:nth-child(9) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -684px;
+}
+
+.box ul li:nth-child(9):hover {
+    background-position: 15px -724px;
+}
+
+.box ul li:nth-child(10) {
+    background: url(../image/360bg.png)no-repeat;
+    background-position: 15px -762px;
+}
+
+.box ul li:nth-child(10):hover {
+    background-position: 15px -802px;
+}

@@ -35,3 +35,10 @@
 <p><a href="https://qwerpanbaojiang.github.io/D15作业//html/饿了么.html">SASS函数布局</a></p>
 
 <p><a href="https://qwerpanbaojiang.github.io/DY15半截页面//html/rem.js+rem.html">js+rem布局</a></p>
+
+
+### D16作业
+
+<p><a href="https://qwerpanbaojiang.github.io/Dy16动画练习/code//html/过渡动画.html">动画练习1</a></p>
+
+<p><a href="https://qwerpanbaojiang.github.io/Dy16动画练习/code//html/过渡动画2.html">动画练习2</a></p>
