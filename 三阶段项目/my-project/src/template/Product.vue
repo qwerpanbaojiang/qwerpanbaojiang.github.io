@@ -504,7 +504,6 @@ export default {
           }
         })
         .then(({ data }) => {
-          // this.goods = data;
           this.$store.dispatch("setGoodsID", {
             goods_id: this.$route.params.id,
             size: this.goodsSize,

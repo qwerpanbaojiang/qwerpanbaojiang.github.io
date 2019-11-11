@@ -65,8 +65,6 @@ router.get('/shopcart', async function (req, res, next) {
   let goods = {
     usid: reqParser.usid,
     goods_id: reqParser.goods_id,
-    size: reqParser.size,
-    color: reqParser.color,
   };
   let insertGood = {
     usid: reqParser.usid,
@@ -97,10 +95,11 @@ router.get('/shopcart', async function (req, res, next) {
   }
 
   //  加减输入框的值变化修改数量
+  console.log(changeNum)
   if (changeNum) {
     update('shopcart', goods, {
       $set: {
-        num: changeNum.num
+        num: reqParser.num
       }
     });
   };

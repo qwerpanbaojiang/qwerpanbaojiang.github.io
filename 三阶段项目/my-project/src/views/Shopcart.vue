@@ -64,7 +64,7 @@
                 <!--<dd class="goods-type"></dd>-->
               </dl>
               <div class="goods-del" :cart_id="item.goods_id">
-                <a href="javascript:void(0);" @click="deletGoods(index)"></a>
+                <a href="javascript:void(0);" @click="deletGoods(index,goodsItem[index].goods_id)"></a>
               </div>
               <div class="goods-subtotal">
                 <span class="goods-price">
@@ -74,7 +74,10 @@
                 <span class="goods-sale"></span>
                 <div class="value-box">
                   <span class="minus">
-                    <a href="javascript:void(0);" @click="cutNum(index)">&nbsp;</a>
+                    <a
+                      href="javascript:void(0);"
+                      @click="cutNum(index,goodsItem[index].goods_id)"
+                    >&nbsp;</a>
                   </span>
                   <span>
                     <input
@@ -87,7 +90,10 @@
                     />
                   </span>
                   <span class="add">
-                    <a href="javascript:void(0);" @click="addNum(index)">&nbsp;</a>
+                    <a
+                      href="javascript:void(0);"
+                      @click="addNum(index,goodsItem[index].goods_id)"
+                    >&nbsp;</a>
                   </span>
                 </div>
               </div>
@@ -138,7 +144,7 @@ export default {
   },
   methods: {
     //  获取购物车商品ID
-    getGoodsID() {
+    getGoodsID(arr) {
       this.$axios
         .get("http://localhost:3000/shopcart", {
           params: {
@@ -154,7 +160,11 @@ export default {
               this.goodsNum.push(item.num * 1);
             }
           }
-          this.getGoods(this.goodsID);
+          if (arr) {
+            this.getGoods(arr);
+          } else {
+            this.getGoods(this.goodsID);
+          }
         });
     },
     //  获取购物车商品数据渲染
@@ -169,11 +179,10 @@ export default {
         .then(({ data }) => {
           this.goodsItem = this.goodsItem.concat(data);
           this.sumTotal();
-          // window.console.log(this.goodsItem);
         });
     },
     // 添加数量
-    addNum(i) {
+    addNum(i, goodID) {
       let _this = this;
       let arr = [];
       _this.goodsNum.forEach(function(item, index) {
@@ -184,9 +193,17 @@ export default {
       });
       _this.goodsNum = arr;
       this.sumTotal();
+      this.$axios.get("http://localhost:3000/shopcart", {
+        params: {
+          usid: 1,
+          goods_id: goodID,
+          num: arr[i],
+          chooseNum: true
+        }
+      });
     },
     // 添加数量
-    cutNum(i) {
+    cutNum(i, goodID) {
       let _this = this;
       let arr = [];
       _this.goodsNum.forEach(function(item, index) {
@@ -200,6 +217,14 @@ export default {
       });
       _this.goodsNum = arr;
       this.sumTotal();
+      this.$axios.get("http://localhost:3000/shopcart", {
+        params: {
+          usid: 1,
+          goods_id: goodID,
+          num: arr[i],
+          changeNum: true
+        }
+      });
     },
     // 店铺全选框
     allCheck() {
@@ -269,8 +294,8 @@ export default {
         });
         this.total = total;
       } else {
-        window.console.log(indexArr);
-        for (var i = 0; i < _this.goodsID.length; i++) {
+        window.console.log(_this.goodsItem);
+        for (var i = 0; i < _this.goodsItem.length; i++) {
           total +=
             1 * (_this.goodsNum[i] * _this.goodsItem[i].goods_price).toFixed(2);
         }
@@ -278,7 +303,7 @@ export default {
       }
     },
     //  删除商品
-    deletGoods(i) {
+    deletGoods(i, goodID) {
       let _this = this;
       let indexArr = _this.checkArr();
       let ok = confirm("您确定要删我吗？");
@@ -295,6 +320,16 @@ export default {
             ).toFixed(2);
         });
         this.total = total;
+        if (indexArr.length == 0) {
+          _this.goodsID = [];
+        }
+        this.$axios.get("http://localhost:3000/shopcart", {
+          params: {
+            usid: 1,
+            goods_id: goodID,
+            deletGood: true
+          }
+        });
       }
     }
   },
@@ -307,13 +342,15 @@ export default {
     getID(newValue, oldValue) {
       if (newValue != oldValue) {
         let arr = [];
+        window.console.log(newValue);
         arr.push(newValue.goods_id);
-        this.getGoods(arr);
+        // this.getGoods(arr);
+        this.getGoodsID(arr);
       }
     }
   },
   created() {
-    this.getGoodsID();
+    this.getGoodsID(null);
   }
 };
 </script>

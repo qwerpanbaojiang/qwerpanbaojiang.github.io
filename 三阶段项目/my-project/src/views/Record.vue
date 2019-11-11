@@ -88,7 +88,7 @@ export default {
           }
         })
         .then(({ data }) => {
-          window.console.log(data);
+          // window.console.log(data);
           this.goodList = data;
         });
     },
